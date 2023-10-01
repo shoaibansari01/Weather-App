@@ -1,0 +1,54 @@
+.weather-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+
+.search-input {
+  width: 250px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.btn-primary {
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.search-icon {
+  font-size: 24px;
+  color: #3498db;
+  margin-right: 10px;
+}
+
+
+.btn-primary {
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+  cursor: pointer;
+  background-color: #3498db;
+  border: none;
+  margin-left: 10px;
+}
+
+
+.btn-primary i.fas {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 5px;
+}
