@@ -1,61 +1,57 @@
+/* WeatherInfo.css */
 .weather-info {
-  text-align: center;
-  margin: 20px;
+  /* Remove background color */
+  background: transparent;
 }
-
 
 .weather-card {
-  background-color: #34495e;
-  color: #fff;
-  animation: fadeIn 1s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  margin-left: -22px;
+  /* Remove background color */
+  background: transparent;
 }
 
-.weather-card:hover {
-  transform: scale(1.05);
-}
-
-
-.card-title {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #333;
-}
-
+.card-title,
 .card-text {
-  font-size: 20px;
-  color: #333;
+  /* Set text color to white */
+  color: white;
 }
 
+/* Optionally, you can remove the card borders as well */
+.weather-card.card {
+  border: none;
+}
 
+/* Optionally, you can style the clock icon and time color */
+.clock {
+  color: white;
+}
+
+/* Optionally, style the error message text */
 .error {
-  background-color: #e74c3c;
+  color: red; /* Or your desired color for error messages */
+}
+.temperature {
+  text-align: center;
   color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-  font-size: 18px;
 }
 
-
-.font-custom {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  margin-top: 10px;
+.big-temp {
+  font-size: 3rem; /* Adjust the size as needed */
+  font-weight: bold;
+  margin: 0; /* Remove any default margins */
 }
-
-
-i.fas {
-  color: #f1c40f;
+.d-flex.justify-content-between {
+  margin-top: 20px; /* Adjust the margin as needed */
 }
-
-
-body {
-  background-color: #ecf0f1;
+.description-humidity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+/* WeatherInfo.css */
+.centered-icon {
+  display: flex;
+  color: rgb(255, 167, 3);
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust the height as needed */
 }

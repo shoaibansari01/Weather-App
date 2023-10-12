@@ -1,54 +1,46 @@
+/* WeatherForm.css */
 .weather-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-
+  background: transparent;
+  text-align: center; /* Center the input and button */
 }
-
 
 .input-group {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .search-input {
-  width: 250px;
-  height: 40px;
-  font-size: 18px;
-  border-radius: 20px;
-  text-align: center;
-}
-
-
-.btn-primary {
-  height: 40px;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-
-.search-icon {
-  font-size: 24px;
-  color: #3498db;
-  margin-right: 10px;
-}
-
-
-.btn-primary {
-  height: 50px;
-  width: 50px;
-  border-radius: 40px;
-  cursor: pointer;
-  background-color: #3498db;
-  border: none;
-  margin-left: 10px;
-}
-
-
-.btn-primary i.fas {
+  width: 100%; /* Expand the input to fill the parent container */
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #fff; /* Add a white border */
   color: #fff;
-  font-size: 18px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-input::placeholder {
+  color: #fff; /* Set the placeholder text color to white */
+}
+
+.btn-primary {
+  border: 2px solid #fff; /* Add a white border to the button */
+  background: transparent;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Optionally, style the search icon inside the button */
+.btn-primary .fas.fa-search {
+  font-size: 20px;
   margin-right: 5px;
 }

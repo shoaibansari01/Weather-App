@@ -1,8 +1,9 @@
+// WeatherForm.js
 import React, { useState } from "react";
 import "./WeatherForm.css";
 
-const WeatherForm = ({ onSearch }) => {
-  const [city, setCity] = useState("");
+const WeatherForm = ({ onSearch, currentCity }) => {
+  const [city, setCity] = useState(currentCity);
 
   const handleInputChange = (e) => {
     setCity(e.target.value);
@@ -11,7 +12,7 @@ const WeatherForm = ({ onSearch }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSearch(city);
-    setCity("");
+    setCity(""); // Clear the input field
   };
 
   return (
@@ -24,9 +25,6 @@ const WeatherForm = ({ onSearch }) => {
           value={city}
           onChange={handleInputChange}
         />
-        <button type="submit" className="btn btn-primary">
-          <i className="fas fa-search"></i> {}
-        </button>
       </div>
     </form>
   );
